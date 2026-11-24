@@ -75,3 +75,10 @@ Contoh: "Madden Julian Oscillation" — user pilih **versi asli**
 - Narasi: **Seno (M5, sid 9)**, speed **0.95**.
 - Suara kedua (video panjang): **Ratna (F3, sid 2)**.
 - Lihat `tts/VOICES.md` untuk 10 karakter lengkap.
+
+## 6. VO Gemini Puck untuk video fakta (disetujui user 2026-11-25, "cocok")
+
+- Suara: **Puck** — laki-laki muda, energik, gaya mengajar. Dipakai untuk video fakta Template 1 (uji coba Telur).
+- Render **SATU BLOK** per video (1 request) — sama seperti aturan 2A. Helper `gemini_tts.py` TIDAK punya parameter gaya/prompt/style — gaya mengandalkan karakter bawaan Puck.
+- **Loop cek ejaan WAJIB:** transkripsi balik audio dengan faster-whisper model **small** (bahasa id); kata kunci (angka dieja, istilah, kata serapan) harus cocok di transkrip; kalau tidak cocok, perbaiki ejaan naskah lalu render ulang bloknya. Model **base TIDAK boleh** dipakai untuk cek ejaan (salah di 6 kata pada tes Telur: bernapas→benapa, setengah→stengah, bunyi→punya, omelet→omlat, dioksida→di Oksida). Catatan: Whisper menormalisasi angka jadi digit ("tujuh belas ribu" → "17 ribu") — itu BUKAN bukti Puck mengucap digit; yang dicek adalah kata-katanya. Satu keraguan yang dibiarkan: "burung unta" terdengar "burung untah" di kedua model — bagi pendengar Indonesia tetap terbaca "burung unta"; jangan "diperbaiki" kecuali user mendengar jelas salah.
+- **Timing caption dari blok Gemini: JANGAN pakai `split_vo.py`** — terbukti salah gabung di blok Puck walau jumlah potongan cocok (segmen 7 kata cuma 0,80 dtk; bandingkan Whisper: 2,60 dtk). Pakai **word-timestamps Whisper small** (align kata 100% dulu — termasuk perbaikan merge desimal "0," + "3" → "nol koma tiga" — baru bangun timing + caption).
