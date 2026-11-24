@@ -1,0 +1,14 @@
+# Hasil generate — jangan di-commit
+node_modules/
+out/
+cek-*/
+*.mp4
+*.wav
+__pycache__/
+*.pyc
+venv/
+model/
+fonts/*.ttf
+sfx/*.mp3
+.DS_Store
+*.muse-github-snapshot-sync.json

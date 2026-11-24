@@ -1,0 +1,60 @@
+{
+  "fakta": [
+    {
+      "angka": "3 jantung (2 ke insang, 1 ke tubuh); darah biru karena hemosianin berbasis tembaga",
+      "catatan_kejujuran": "Jantung utama berhenti saat berenang cepat (jet propulsion) — terverifikasi di 3 sumber. Istilah 'hemosianin' TIDAK dipakai di VO (rawan belibet); diganti 'pengangkut oksigennya pakai tembaga'.",
+      "headline": "3 JANTUNG",
+      "id": "f1",
+      "klaim": "Gurita punya tiga jantung dan darah biru",
+      "narasi": "Dua jantung memompa darah ke insang, satu jantung memompa darah ke seluruh tubuh. Darahnya biru karena pengangkut oksigennya pakai tembaga, bukan besi seperti kita. Jantung utamanya berhenti berdetak saat gurita berenang cepat.",
+      "pil": [
+        "TIGA JANTUNG",
+        "BERHENTI SAAT BERENANG"
+      ],
+      "sumber": [
+        "https://id.orphek.com/the-octopus-five-reasons-this-extraordinary-creature-feels-almost-alien/",
+        "https://www.beautynesia.id/life/5-fakta-unik-gurita-hewan-laut-dengan-tiga-jantung/b-322962",
+        "https://pustaka.asis.id/serba-serbi/gurita-si-cerdas-dengan-tiga-jantung-905bf414fcaa"
+      ]
+    },
+    {
+      "angka": "9 otak (1 pusat + 8 mini di pangkal lengan); ~500 juta neuron; 2/3 neuron ada di lengan",
+      "catatan_kejujuran": "'Sembilan otak' adalah framing populer — yang 8 itu gugus saraf ('otak mini') di pangkal lengan; naskah menjelaskan itu. Angka 500 juta neuron + 2/3 di lengan konsisten di semua sumber. Jumlah pengisap (~250/lengan) TIDAK dipakai karena sumber beda-beda (250 vs 280).",
+      "headline": "9 OTAK",
+      "id": "f2",
+      "klaim": "Gurita punya sembilan otak dan 500 juta neuron",
+      "narasi": "Satu otak pusat, delapan otak mini di pangkal tiap lengan. Totalnya sekitar lima ratus juta neuron, dan dua per tiga-nya ada di lengan, bukan di otak. Makanya tiap lengan bisa bergerak sendiri.",
+      "pil": [
+        "SEMBILAN OTAK",
+        "LENGAN BISA MIKIR SENDIRI"
+      ],
+      "sumber": [
+        "https://bobo.grid.id/read/084305257/hari-gurita-sedunia-menilik-keistimewaan-dan-kecerdasan-gurita?page=all",
+        "https://everyfacts.com/animals/id/gurita-biasa/",
+        "https://lingkarbumi.com/fleksibilitas-lengan-gurita-bisa-jadi-model-robot-cerdas/"
+      ]
+    },
+    {
+      "angka": "kromatofora mengembang ~100 milidetik (perubahan warna tercepat di dunia hewan); jutaan sel warna; tekstur kulit juga berubah (papila)",
+      "catatan_kejujuran": "'~100 milidetik' dari Current Biology (perubahan warna tercepat di dunia hewan). Di VO dipakai 'kurang dari sepersepuluh detik' (lebih aman dibaca). Istilah 'kromatofora' TIDAK dipakai di VO; diganti 'sel warna'. Analogi balon dari Smithsonian Ocean.",
+      "headline": "0,1 DETIK",
+      "id": "f3",
+      "klaim": "Gurita ganti warna kulit kurang dari sepersepuluh detik",
+      "narasi": "Gurita bisa ganti warna kulit kurang dari sepersepuluh detik. Itu karena jutaan sel warna di kulitnya yang membuka dan menutup seperti balon kecil. Bukan cuma warna, tekstur kulitnya juga bisa berubah, sampai menyerupai batu karang.",
+      "pil": [
+        "GANTI WARNA SEKEJAP",
+        "TEKSTUR IKUT BERUBAH"
+      ],
+      "sumber": [
+        "https://ocean.si.edu/ocean-life/invertebrates/how-octopuses-and-squids-change-color",
+        "https://www.cell.com/current-biology/fulltext/S0960-9822(23)01182-X",
+        "https://thebackyardscientist.com/octopuses-color-change-explained/"
+      ]
+    }
+  ],
+  "hook": "Tiga fakta gila tentang gurita. Yang nomor tiga paling nggak masuk akal.",
+  "referensi_video": "@archive.egan (Threads, video gurita) — 1 maskot konsisten, morph X-ray, teks minim, suara yang bawa semuanya.",
+  "tanggal_riset": "2026-11-24",
+  "tanya": "Fakta mana yang paling bikin kamu kaget? Tulis 'gurita' di komentar kalau kamu baru tahu.",
+  "topik": "3 Fakta Gila tentang Gurita"
+}
