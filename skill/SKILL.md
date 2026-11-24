@@ -4,7 +4,7 @@
 > `~/workspace/remotion-fakta-bulan/`, suara di `~/workspace/supertonic-test/`).
 > Kalau repo ini di-clone ke tempat lain, ganti path itu dengan lokasi clone
 > kamu — semua langkahnya sama. Versi repo ini = salinan 1:1 dari skill asli
-> (35 pelajaran, per 2026-11-24).
+> (36 pelajaran, per 2026-11-24).
 
 **Nama skill:** `video-fakta-remotion`
 **Tujuan:** bikin video fakta vertikal 720×1280 (±45–60 detik, format "3 Fakta Gila tentang X") yang padat, smooth, dan bisa diulang untuk topik apa pun.
@@ -139,3 +139,5 @@
 - thread-film (GitHub hanzlahabib): sound = movement (whoosh saat terbang, tick saat mendarat).
 - shorts-kit (GitHub howznguyen): fact ledger, 20 flow storytelling, aturan warna/gerak.
 - **@dmvtkn / Dede Muttakin (Facebook reel, 22 Nov 2026, ~80 dtk, 2,8 rb suka)** — tutorial "bikin animasi pakai laptop kentang (Claude Code + Remotion)". Yang ditiru: (1) hook masalah relatable + visual literal (laptop + stiker kentang, penonton paham dalam 3 detik); (2) teks kata-per-kata + efek mengetik sinkron narasi, kata kunci di-highlight hijau/kuning; (3) diagram berpanah + kartu bernomor + mockup UI asli (bukan sekadar teks); (4) maskot kartun (beanie hijau) konsisten di pojok kanan bawah SEMUA adegan; (5) disclaimer jujur di awal ("Claude Pro berbayar") + CTA komentar spesifik ("tulis 'mau'"). Latar grid krem/navy bergantian; narasi laki-laki santai tempo cepat, tanpa musik/SFX dominan; pacing sangat padat, tanpa jeda kosong.
+
+36. **ATURAN VO SATU BLOK — DIBEDAKAN PER MESIN & KEBUTUHAN CAPTION (user 2026-11-24 ~19:59, "tambahin satu aturan... biar hemat"):** ide awal "satu blok utuh baru dipotong" dites dan GAGAL untuk timing caption — jeda koma Seno bisa lebih panjang dari jeda antar-kalimat (tes: kalimat 6 kata dapat 6,12 dtk, kalimat 21 kata dapat 3,79 dtk — merge lewat jeda terpendek salah gabung; jumlah potongan cocok belum tentu isinya benar). Aturan final (lihat `tts/rules.md` bag. 2): **(A) Gemini TTS — WAJIB satu blok** (15 request/hari; video 10 menit = 50–60 kalimat = kuota 4 hari kalau per kalimat; maks ~11 menit/blok, amannya 4.000–6.000 karakter/blok ~5–7 menit); **(B) video tanpa caption kata-per-kata — satu blok, Supertonic maupun Gemini**, potong kasar per beat saja (`tts/split_vo.py`); **(C) video fakta V4 + Supertonic — TETAP per kalimat** (lokal gratis, timing PASTI buat caption; `render_vo.py` tanpa `--block`); **(D) satu kata salah baca — render ulang kalimat itu saja lalu tempel.** Skrip baru: `render_vo.py --block` (satu blok per segmen + jeda pembuka 0,5 dtk) dan `tts/split_vo.py` (deteksi sunyi ≥0,2 dtk, gabung lewat jeda terpendek, verifikasi jumlah potongan = jumlah kalimat, exit 2 kalau tidak cocok) — keduanya dites end-to-end 2026-11-24 sebelum push.
